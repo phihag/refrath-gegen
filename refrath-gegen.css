@@ -1,0 +1,74 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	background: #0a101b;
+	height: 100%;
+}
+
+.fullscreen #config {
+	display: none;
+}
+body.fullscreen {
+	cursor: none;
+}
+
+#config {
+	font-family: 'Droid Sans', Arial, sans-serif;
+	z-index: 100;
+	background: #fff;
+	font-size: 20px;
+	font-size: 4vmin;
+	position: absolute;
+	left: 0; top: 0; right: 0;
+}
+button#set {
+	position: absolute;
+	right: 0;
+	padding: 0.3em 0.5em;
+}
+#input_home {
+	width: 6em;
+}
+#input_home,#input_away {
+	padding: 0.3em 0 0.3em 0.2em;
+}
+
+input, button {
+	font-size: inherit;
+}
+
+#content {
+	position: absolute;
+	left: 10%; right: 10%;
+	top: 0; bottom: 0;
+	font-family: Arial, sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	white-space: nowrap;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#vs {
+	color: #7e94c5;
+}
+
+#home, #away {
+	color: #fffefc;
+}
+
+#home, #away, #vs {
+	font-size: 70px;
+}
+#home>span, #away>span, #vs>span {
+	text-decoration: underline;
+}
+#away, #vs {
+	margin: 0.3em 0 0 0;
+}

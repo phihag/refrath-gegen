@@ -1,0 +1,18 @@
+{
+	"name": "refrath-gegen",
+	"author": "Philipp Hagemeister <phihag@phihag.de>",
+	"description": "Image display panel for team competitions",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/phihag/refrath-gegen.git"
+	},
+	"scripts": {},
+	"dependencies": {
+	},
+	"devDependencies": {
+		"jshint": "*",
+		"eslint": "*",
+		"parse-appcache-manifest": "*"
+	},
+	"private": true
+}
