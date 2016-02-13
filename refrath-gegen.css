@@ -29,6 +29,9 @@ button#set {
 #input_home {
 	width: 6em;
 }
+#input_away {
+	width: 15em;
+}
 #input_home,#input_away {
 	padding: 0.3em 0 0.3em 0.2em;
 }
@@ -45,7 +48,7 @@ input, button {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	white-space: nowrap;
+	white-space: pre;
 
     -webkit-touch-callout: none;
     -webkit-user-select: none;

@@ -33,7 +33,7 @@ function get_optimal_size(span, desired_width, desired_height) {
 function resize() {
 	var container = document.querySelector('#content');
 	var container_width = container.offsetWidth;
-	var container_height = 0.22 * container.offsetHeight;
+	var container_height = 0.30 * container.offsetHeight;
 	var els = ['#home>span', '#vs>span', '#away>span'].map(function(qs) {
 		return document.querySelector(qs);
 	});
@@ -46,13 +46,21 @@ function resize() {
 	});
 }
 
+function parse_text(s) {
+	var m = s.match(/^([^-]{7,}-)([^-]{7,})$/);
+	if (m) {
+		return m[1] + '\n' + m[2];
+	}
+	return s;
+}
+
 function update_home() {
-	text(document.querySelector('#home>span'), document.querySelector('#input_home').value);
+	text(document.querySelector('#home>span'), parse_text(document.querySelector('#input_home').value));
 	resize();
 }
 
 function update_away() {
-	text(document.querySelector('#away>span'), document.querySelector('#input_away').value);
+	text(document.querySelector('#away>span'), parse_text(document.querySelector('#input_away').value));
 	resize();
 }
 
