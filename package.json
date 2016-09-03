@@ -10,6 +10,7 @@
 	"dependencies": {
 	},
 	"devDependencies": {
+		"async": "*",
 		"jshint": "*",
 		"eslint": "*",
 		"parse-appcache-manifest": "*"
