@@ -60,6 +60,7 @@ function main() {
 		fs.readFile(in_file, {encoding: 'utf8'}, cb);
 	}, function(manifest_in, cb) {
 		var files = get_files_from_manifest(manifest_in);
+		files.push('refrath-gegen.html');
 		async.map(files, function(fn, cb) {
 			hash_file(path.join(dist_dir, fn), cb);
 		}, function(err, checksums) {
